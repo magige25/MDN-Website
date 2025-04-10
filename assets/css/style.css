@@ -1,0 +1,88 @@
+/* Button Styles */
+.button-base {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Fully rounded button */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth transition */
+  text-align: center;
+  display: inline-block;
+}
+
+/* Resume Button */
+.resume-button {
+  width: 10rem; 
+  background-color: white;
+  color: #4a4a4a;
+  border: 2px solid #601eef;
+}
+
+.resume-button:hover {
+  background-color: #601eef;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+/* Contact Me Button */
+.contact-button {
+  width: 10rem; 
+  background-color: #601eef;
+  color: white;
+}
+
+.contact-button:hover {
+  background-color: #4a00b1; /* Darker shade of #601eef */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+.button {
+  width: 6rem; 
+  background-color: #601eef;
+  color: white;
+}
+
+.button:hover {
+  background-color: #4a00b1; /* Darker shade of #601eef */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+/* Dark Mode Compatibility */
+@media (prefers-color-scheme: dark) {
+  .resume-button {
+    background-color: #333;
+    color: #ccc;
+    border: 2px solid #601eef;
+  }
+  .resume-button:hover {
+    background-color: #601eef;
+    color: white;
+  }
+  
+  .contact-button {
+    background-color: #601eef;
+    color: white;
+  }
+
+  .contact-button:hover {
+    background-color: #4a00b1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+  }
+
+  .button {
+    background-color: #601eef;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #4a00b1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+  }
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
