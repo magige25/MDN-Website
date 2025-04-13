@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --default-font: 'Manrope', sans-serif; 
+  --lilac-800: #601eef;
+}
+
+body {
+  font-family: var(--default-font);  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  background-color: #ffffff; 
+  color: #333333; 
+}
+
+* {
+  font-family: var(--default-font); 
+}
+
+
+.button-base {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; 
+  font-weight: 600;
+  transition: all 0.3s ease; 
+  text-align: center;
+  display: inline-block;
+}
+
+.resume-button {
+  width: 10rem; 
+  background-color: white;
+  color: #4a4a4a;
+  border: 2px solid #601eef;
+}
+
+.resume-button:hover {
+  background-color: #601eef;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+.contact-button {
+  width: 10rem; 
+  background-color: #601eef;
+  color: white;
+}
+
+.contact-button:hover {
+  background-color: #4a00b1; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+.button {
+  width: 6rem; 
+  background-color: #601eef;
+  color: white;
+}
+
+.button:hover {
+  background-color: #4a00b1; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+}
+
+/* Dark Mode Compatibility */
+@media (prefers-color-scheme: dark) {
+  .resume-button {
+    background-color: #333;
+    color: #ccc;
+    border: 2px solid #601eef;
+  }
+  .resume-button:hover {
+    background-color: #601eef;
+    color: white;
+  }
+  
+  .contact-button {
+    background-color: #601eef;
+    color: white;
+  }
+
+  .contact-button:hover {
+    background-color: #4a00b1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+  }
+
+  .button {
+    background-color: #601eef;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #4a00b1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
+  }
+
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}

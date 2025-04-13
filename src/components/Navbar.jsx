@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-gray-800 dark:bg-gray-100 text-white dark:text-gray-900 py-4">
+    <nav className="fixed top-0 w-full z-50 bg-gray-800 dark:bg-gray-800 text-white dark:text-white py-4">
       <div className="container mx-auto px-8 flex justify-between items-center">
         <NavLink to="/" className="text-2xl font-bold">
           MDN Portfolio
@@ -82,11 +82,11 @@ const Navbar = () => {
           {/* Dark Mode Toggle Button */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-gray-700 dark:hover:bg-gray-200"
+            className="p-2 rounded-full hover:bg-gray-700 dark:hover:bg-gray-700"
             aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDarkMode ? (
-              <RiSunLine size={20} className="text-gray-700" />
+              <RiSunLine size={20} className="text-white" />
             ) : (
               <RiMoonLine size={20} className="text-white" />
             )}
