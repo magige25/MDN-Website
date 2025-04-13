@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 import { Link } from "react-router-dom";
 
@@ -49,44 +49,55 @@ const Footer = () => {
               to="https://www.facebook.com/profile.php?id=100068058460983"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white dark:bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="p-2 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <FaFacebook
-                className="text-blue-600 transition-all duration-300"
-                size={16}
+                className="text-[#601eef] transition-all duration-300"
+                size={24}
               />
             </Link>
             <Link
               to="https://x.com/@magige_"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white dark:bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="p-2 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <SiX
-                className="text-black dark:text-black transition-all duration-300"
-                size={16}
+                className="text-[#601eef] transition-all duration-300"
+                size={24}
               />
             </Link>
             <Link
               to="https://www.linkedin.com/in/magige-david-392439239/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white dark:bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="p-2 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <FaLinkedin
-                className="text-blue-700 transition-all duration-300"
-                size={16}
+                className="text-[#601eef] transition-all duration-300"
+                size={24}
               />
             </Link>
             <Link
               to="https://github.com/magige25"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white dark:bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="p-2 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <FaGithub
-                className="text-gray-800 dark:text-gray-800 transition-all duration-300"
-                size={16}
+                className="text-[#601eef] transition-all duration-300"
+                size={24}
+              />
+            </Link>
+            <Link
+              to="https://instagram.com/magige___"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <FaInstagram
+                className="text-[#601eef] transition-all duration-300"
+                size={24}
               />
             </Link>
           </div>

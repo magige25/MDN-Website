@@ -85,7 +85,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-200 dark:bg-black text-gray-900 dark:text-white py-20" id="contact">
+    <div className="bg-gray-200 dark:bg-black text-gray-900 dark:text-white py-20 pt-24" id="contact">
       <ToastContainer position="top-right" autoClose={4000} />
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>

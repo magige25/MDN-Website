@@ -5,7 +5,7 @@ const TermsOfService = () => {
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <div className="bg-white dark:bg-black text-gray-900 dark:text-white py-20" id="terms-of-service">
+    <div className="bg-white dark:bg-black text-gray-900 dark:text-white py-20 pt-24" id="terms-of-service">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">Terms of Service</h2>
         <p className="text-gray-600 dark:text-gray-400 text-center mb-4">

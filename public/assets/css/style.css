@@ -106,3 +106,215 @@ body {
 .border {
   border: 1px solid #e5e7eb;
 }
+
+/* Background Elements Animation */
+.about-particles {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: rgba(96, 30, 239, 0.1);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: drift 15s infinite alternate;
+}
+
+.about-pattern {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(96, 30, 239, 0.15) 10%,
+    transparent 10.01%
+  );
+  background-size: 15px 15px;
+  animation: drift 20s infinite alternate;
+}
+
+.about-gradient {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(96, 30, 239, 0.05),
+    transparent
+  );
+  top: 0;
+  left: 0;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, 30px) scale(1.1);
+  }
+  100% {
+    transform: translate(-20px, 50px) scale(0.9);
+  }
+}
+
+/* Section Header Animation */
+.animate-reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-reveal-text.animate-reveal-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Journey Timeline Styling */
+.journey-node {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.journey-node.active .node-content {
+  border-left: 4px solid #601eef;
+}
+
+.node-year {
+  left: -30px !important;
+  transform: scale(1.05);
+}
+
+.node-dot {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow {
+  box-shadow: 0 0 10px rgba(96, 30, 239, 0.5);
+  transform: scale(1.05);
+}
+
+.node-content {
+  transition: border-left 0.3s ease;
+}
+
+.node-content:hover {
+  transform: translateX(5px);
+}
+
+.node-icon {
+  transition: color 0.3s ease;
+}
+
+.timeline-line {
+  transform: scaleY(1);
+}
+
+/* Tech Bridge Styling and Animation */
+.tech-bridge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bridge-connector {
+  width: 2px;
+  height: 50px;
+  background: none;
+  border: 1px dashed #601eef;
+  opacity: 0.5;
+}
+
+.tech-orbit {
+  position: relative;
+  animation: pulse-orbit 4s ease-in-out infinite;
+}
+
+.tech-ball {
+  position: absolute;
+  transform-origin: center;
+  animation: orbit 12s linear infinite;
+  opacity: 0;
+}
+
+.tech-ball.js {
+  top: 0;
+  left: 50%;
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+.tech-ball.react {
+  top: 25%;
+  right: 0;
+  animation-delay: -3s;
+}
+
+.tech-ball.node {
+  bottom: 25%;
+  right: 0;
+  animation-delay: -6s;
+}
+
+.tech-ball.py {
+  bottom: 0;
+  left: 50%;
+  animation-delay: -9s;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-orbit {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Skills Section Styling */
+.animate-reveal-content {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible !important;
+}
+
+.skill-category,
+.category-icon,
+.category-title,
+.skills-list,
+.skill-tag {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  color: inherit !important;
+}
+
+.skill-tag {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #601eef;
+  color: white;
+}
+
+/* Stats Section Styling */
+/* .animate-reveal-content > div {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible !important;
+} */

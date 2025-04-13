@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-16 px-4">
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-16 pt-24">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">Magige David Magacha</h1>
         <p className="text-center mb-4">
@@ -159,10 +159,10 @@ const Resume = () => {
               <p>Relationship: Academic Advisor</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold">Angela John</h3>
-              <p>Position: Lecturer, The Cooperative University of Kenya</p>
+              <h3 className="text-2xl font-semibold">Wes Kibagendi</h3>
+              <p>Position: Manager, Tigersoft Systems</p>
               <p>Phone: <a href="tel:+254718360158" className="text-[#601eef] hover:text-[#3a12c3] hover:underline">0718 360 158</a></p>
-              <p>Relationship: Course Instructor</p>
+              <p>Relationship: Project Manager</p>
             </div>
           </div>
         </section>
