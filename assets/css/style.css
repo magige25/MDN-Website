@@ -1,14 +1,34 @@
-/* Button Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --default-font: 'Manrope', sans-serif; 
+  --lilac-800: #601eef;
+}
+
+body {
+  font-family: var(--default-font);  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  background-color: #ffffff; 
+  color: #333333; 
+}
+
+* {
+  font-family: var(--default-font); 
+}
+
+
 .button-base {
   padding: 0.5rem 1rem;
-  border-radius: 9999px; /* Fully rounded button */
+  border-radius: 9999px; 
   font-weight: 600;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease; 
   text-align: center;
   display: inline-block;
 }
 
-/* Resume Button */
 .resume-button {
   width: 10rem; 
   background-color: white;
@@ -23,7 +43,6 @@
   box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
 }
 
-/* Contact Me Button */
 .contact-button {
   width: 10rem; 
   background-color: #601eef;
@@ -31,7 +50,7 @@
 }
 
 .contact-button:hover {
-  background-color: #4a00b1; /* Darker shade of #601eef */
+  background-color: #4a00b1; 
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
 }
@@ -43,7 +62,7 @@
 }
 
 .button:hover {
-  background-color: #4a00b1; /* Darker shade of #601eef */
+  background-color: #4a00b1; 
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
 }
@@ -81,6 +100,7 @@
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(96, 30, 239, 0.4);
   }
+
 }
 
 .border {
