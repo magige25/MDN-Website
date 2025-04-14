@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,21 +61,15 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await axios.post("http://localhost:5000/api/contact", formData);
 
-      const data = await res.json();
-
-      if (res.ok) {
+      if (res.data.success) {
         toast.success("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
         setErrors({});
         setStatus("");
       } else {
-        toast.error(data.message || "Failed to send message.");
+        toast.error(res.data.message || "Failed to send message.");
         setStatus("");
       }
     } catch (error) {
@@ -91,8 +86,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <div className="flex-1">
-            <h3 className="text-3xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-400 to-blue-500 mb-4">
+            <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-4">
               Let's Talk
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
